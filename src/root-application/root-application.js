@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import * as singleSpa from 'single-spa';
 import 'zone.js';
 
