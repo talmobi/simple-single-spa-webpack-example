@@ -9,8 +9,18 @@ singleSpa.declareChildApplication('app-3', () => SystemJS.import('../src/app3/di
 
 singleSpa.start();
 
+function reset () {
+  // call before mounting new apps e.g.
+  // ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+  var r = {}
+  r.__proto__ = window.Reflect
+  window.Reflect = r
+}
+
 function hashPrefix(prefix) {
 	return function(location) {
+    reset()
+
 		return location.hash.startsWith(`#${prefix}`);
 	}
 }
