@@ -5,6 +5,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# vim temp files
+*.sw?
+
+# mac files
+*.DS_Store
+
 # Runtime data
 pids
 *.pid
