@@ -10,3 +10,7 @@ import {Component, NgZone, Inject} from '@angular/core';
 })
 export class App2 {
 }
+
+window.addEventListener( 'click', function () {
+  console.log( 'app2 clicked' )
+} )
